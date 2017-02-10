@@ -125,13 +125,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Data\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\materialize.css" />
     <Content Include="Content\style.css" />
-    <Content Include="Content\style.min.css" />
     <Content Include="Content\thems\all-themes.css" />
     <Content Include="Content\thems\all-themes.min.css" />
     <Content Include="Content\thems\theme-amber.css" />
@@ -176,8 +180,99 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\animation-bg.jpg" />
+    <Content Include="images\thumbs-up.png" />
+    <Content Include="images\user-img-background.jpg" />
+    <Content Include="images\user.jpg" />
+    <Content Include="images\user.png" />
+    <Content Include="plugin\animate-css\animate.css" />
+    <Content Include="plugin\animate-css\animate.min.css" />
+    <Content Include="plugin\bootstrap-select\js\bootstrap-select.js" />
+    <Content Include="plugin\bootstrap-select\js\bootstrap-select.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ar_AR.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ar_AR.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-bg_BG.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-bg_BG.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-cro_CRO.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-cro_CRO.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-cs_CZ.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-cs_CZ.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-da_DK.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-da_DK.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-de_DE.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-de_DE.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-en_US.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-en_US.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-es_CL.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-es_CL.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-eu.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-eu.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-fa_IR.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-fa_IR.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-fi_FI.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-fi_FI.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-fr_FR.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-fr_FR.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-hu_HU.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-hu_HU.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-id_ID.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-id_ID.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-it_IT.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-it_IT.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ko_KR.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ko_KR.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-lt_LT.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-lt_LT.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-nb_NO.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-nb_NO.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-nl_NL.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-nl_NL.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-pl_PL.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-pl_PL.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-pt_BR.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-pt_BR.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-pt_PT.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-pt_PT.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ro_RO.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ro_RO.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ru_RU.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ru_RU.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-sk_SK.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-sk_SK.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-sl_SI.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-sl_SI.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-sv_SE.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-sv_SE.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-tr_TR.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-tr_TR.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ua_UA.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-ua_UA.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-zh_CN.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-zh_CN.min.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-zh_TW.js" />
+    <Content Include="plugin\bootstrap-select\js\i18n\defaults-zh_TW.min.js" />
+    <Content Include="plugin\jquery-countto\jquery.countTo.js" />
+    <Content Include="plugin\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="plugin\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="plugin\jquery-slimscroll\package.js" />
+    <Content Include="plugin\jquery-sparkline\jquery.sparkline.js" />
+    <Content Include="plugin\morrisjs\morris.css" />
+    <Content Include="plugin\morrisjs\morris.js" />
+    <Content Include="plugin\morrisjs\morris.min.js" />
+    <Content Include="plugin\node-waves\waves.css" />
+    <Content Include="plugin\node-waves\waves.js" />
+    <Content Include="plugin\node-waves\waves.min.css" />
+    <Content Include="plugin\node-waves\waves.min.js" />
+    <Content Include="plugin\raphael\Gruntfile.js" />
+    <Content Include="plugin\raphael\raphael.js" />
+    <Content Include="plugin\raphael\raphael.min.js" />
+    <Content Include="plugin\raphael\raphael.no-deps.js" />
+    <Content Include="plugin\raphael\raphael.no-deps.min.js" />
+    <Content Include="plugin\raphael\webpack.config.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="plugin\node-waves\waves.min.js.map" />
+    <Content Include="plugin\bootstrap-select\js\bootstrap-select.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -206,10 +301,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_TopBar.cshtml" />
+    <Content Include="Views\Shared\_LeftSlideBar.cshtml" />
+    <Content Include="Views\Shared\_RightSideBar.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +316,12 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_Data\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
