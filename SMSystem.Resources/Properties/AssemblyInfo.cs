@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Resources")]
+[assembly: AssemblyTitle("SMSystem.Resources")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Resources")]
+[assembly: AssemblyProduct("SMSystem.Resources")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("575ca5c2-9e22-44cf-aa8b-6ebddffd447d")]
+[assembly: Guid("f98a2f22-2b85-4dd5-a465-016ac292921e")]
 
 // Version information for an assembly consists of the following four values:
 //

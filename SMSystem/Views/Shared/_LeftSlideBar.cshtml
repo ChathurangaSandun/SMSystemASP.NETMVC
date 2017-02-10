@@ -1,4 +1,6 @@
-﻿<!-- Left Sidebar -->
+﻿@using SMSystem.Resources
+
+<!-- Left Sidebar -->
 <aside id="leftsidebar" class="sidebar">
     
     <!-- Menu -->
@@ -341,7 +343,7 @@
     <!-- Footer -->
     <div class="legal">
         <div class="copyright">
-            &copy; @System.DateTime.Today.Year <a href="javascript:void(0);"></a>.
+            &copy; @System.DateTime.Today.Year <a href="javascript:void(0);"> - @LayoutResource.Project_Name</a>.
         </div>
         
     </div>
