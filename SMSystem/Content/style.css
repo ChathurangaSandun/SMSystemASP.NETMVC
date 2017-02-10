@@ -101,8 +101,7 @@
     text-decoration: none; }
 
 .navbar-nav > li > a {
-  padding: 7px 7px 2px 7px;
-  margin-top: 17px;
+  padding: 7px 7px 2px 7px;  
   margin-left: 5px; }
 
 .navbar-nav .dropdown-menu {
@@ -8004,6 +8003,6 @@ html.ie11 .bs-searchbox .form-control {
    .nav-profile-image {
        max-width: none;
        border-radius: 50%;
-       width: 24px;
-       height: 24px;
+       width: 28px;
+       height: 28px;
    }
