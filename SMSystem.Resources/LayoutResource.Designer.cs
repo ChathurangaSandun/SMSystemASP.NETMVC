@@ -68,5 +68,14 @@ namespace SMSystem.Resources {
                 return ResourceManager.GetString("Project_Name", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Managment System by Chathurnaga Sandun Kumara .
+        /// </summary>
+        public static string Sub_Name {
+            get {
+                return ResourceManager.GetString("Sub_Name", resourceCulture);
+            }
+        }
     }
 }
