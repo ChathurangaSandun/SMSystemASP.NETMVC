@@ -32,10 +32,6 @@
     <!--Toastr-->
     <link href="~/Content/toastr.css" rel="stylesheet" />
 
-
-    
- 
-
 </head>
 
 <body class="login-page">
@@ -49,13 +45,9 @@
                 @using (Html.BeginForm("Login", "User", FormMethod.Post, new { @id = "sign_in" }))
                 {
 
-
-                   
-
-
                     <div class="msg">Sign in to start your session</div>
 
-                    @Html.ValidationSummary()
+                    //@Html.ValidationSummary()
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
@@ -127,10 +119,19 @@
 
     <!--Toastr Js-->
     <script src="~/Scripts/toastr.js"></script>
-   
-   
+
+    @section scripts{
+        <script>
+            $(document).ready(function () {
+                console.write('@String.IsNullOrEmpty(TempData["LOGIN_FAIL"].ToString())');
+
+                if ('@String.IsNullOrEmpty(TempData["LOGIN_FAIL"].ToString())') {
+                    toastr["error"](@TempData["LOGIN_FAIL"]);
+                }
+
+            });
+        </script>
+    }
+
 </body>
 </html>
-
-
-

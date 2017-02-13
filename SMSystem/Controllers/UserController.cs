@@ -17,46 +17,43 @@ namespace SMSystem.Controllers
         public UserController()
         {
             _db= new SM_System();
-
         }
 
         protected override void Dispose(bool disposing)
         {
-           
-            base.Dispose(disposing);
+            _db.Dispose();
         }
 
-
         public ActionResult Login()
-        {   
+        {  
             return View();
         }
 
         [HttpPost]
         public ActionResult Login(LoginViewModel loginViewModel)
         {
-
-           
-
             if (ModelState.IsValid)
             {
                 User user = null;
 
                 if (_db.Users.Any())
                 {
-                    user = _db.Users.First(o => o.UserName.Equals(loginViewModel.UserName) && o.PasswordHash.Equals(loginViewModel.PasswordHash));
+                    user = _db.Users.FirstOrDefault(o => o.UserName.Equals(loginViewModel.UserName) && o.PasswordHash.Equals(loginViewModel.PasswordHash));
                 }
-                
 
                 if (user == null)
                 {
-                    ModelState.AddModelError("", "Wrong username and password");
-
+                    //ModelState.AddModelError("", "Wrong username and password");
+                    TempData["LOGIN_FAIL"] = "Wrong username and password";
                 }
-
-
+                else
+                {
+                    if (user.UserType.Equals(UserType.Admin))
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
             }
-           
             return View();
         }
 

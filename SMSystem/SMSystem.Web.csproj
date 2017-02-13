@@ -152,6 +152,10 @@
     <Compile Include="Migrations\201702111213281_updateuseraddingtype.Designer.cs">
       <DependentUpon>201702111213281_updateuseraddingtype.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702131831561_addAdminName.cs" />
+    <Compile Include="Migrations\201702131831561_addAdminName.Designer.cs">
+      <DependentUpon>201702131831561_addAdminName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -366,6 +370,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702111213281_updateuseraddingtype.resx">
       <DependentUpon>201702111213281_updateuseraddingtype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702131831561_addAdminName.resx">
+      <DependentUpon>201702131831561_addAdminName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
