@@ -30,7 +30,7 @@ namespace SMSystem.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(LoginViewModel loginViewModel)
+        public bool Login(LoginViewModel loginViewModel)
         {
             if (ModelState.IsValid)
             {
@@ -43,18 +43,16 @@ namespace SMSystem.Controllers
 
                 if (user == null)
                 {
-                    //ModelState.AddModelError("", "Wrong username and password");
-                    TempData["LOGIN_FAIL"] = "Wrong username and password";
+                    return false;
                 }
                 else
                 {
-                    if (user.UserType.Equals(UserType.Admin))
-                    {
-                        return RedirectToAction("Index", "Home");
-                    }
+                    return true;
                 }
             }
-            return View();
+            //return View();
+
+            return true;
         }
 
         public ActionResult FogetPassword()

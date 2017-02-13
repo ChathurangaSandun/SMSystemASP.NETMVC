@@ -32,9 +32,36 @@
     <!--Toastr-->
     <link href="~/Content/toastr.css" rel="stylesheet" />
 
+    
 
-     
+    <!--scripts-->    
+    
+    <!--Jquery-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script> 
 
+    <!--Ajax.beginForm-->
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script> 
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script> 
+
+    <script>
+        function SuccessMessage(result) {
+            console.log(result);
+            if (result === "False") {
+                toastr["error"]("Wrong Username and password!!");
+            } 
+        }
+
+        function BeginProgress() {
+            console.log("start");
+        }
+
+        function CompletedProgress() {
+            console.log("stop");
+        }
+
+
+    </script>
 
 </head>
 
@@ -45,8 +72,16 @@
             <small>@LayoutResource.Sub_Name</small>
         </div>
         <div class="card">
+            
             <div class="body">
-                @using (Html.BeginForm("Login", "User", FormMethod.Post, new { @id = "sign_in" }))
+                @using (Ajax.BeginForm("Login", "User", null, new AjaxOptions
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "SuccessMessage",
+                    OnBegin = "BeginProgress",
+                    OnComplete = "CompletedProgress"
+
+                }, new {@id = "sign_in"}))
                 {
 
                     <div class="msg">Sign in to start your session</div>
@@ -58,9 +93,9 @@
                         </span>
                         <div class="form-line">
                             @*<input type="text" class="form-control" name="username" placeholder="Username" required autofocus>*@
-                            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = Html.DisplayNameFor(model => model.UserName), type = "text", required = "required" })
+                            @Html.TextBoxFor(model => model.UserName, new {@class = "form-control", @placeholder = Html.DisplayNameFor(model => model.UserName), type = "text", required = "required"})
                         </div>
-                        @Html.ValidationMessageFor(model => model.UserName, null, new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(model => model.UserName, null, new {@class = "text-danger"})
 
 
                     </div>
@@ -70,9 +105,9 @@
                         </span>
                         <div class="form-line">
                             @*<input type="password" class="form-control" name="password" placeholder="Password" required>*@
-                            @Html.TextBoxFor(model => model.PasswordHash, new { @class = "form-control", @placeholder = Html.DisplayNameFor(model => model.PasswordHash), type = "password", required = "required" })
+                            @Html.TextBoxFor(model => model.PasswordHash, new {@class = "form-control", @placeholder = Html.DisplayNameFor(model => model.PasswordHash), type = "password", required = "required"})
                         </div>
-                        @Html.ValidationMessageFor(model => model.PasswordHash, null, new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(model => model.PasswordHash, null, new {@class = "text-danger"})
 
 
                     </div>
@@ -86,10 +121,10 @@
                         </div>
                     </div>
                     <div class="row m-t-15 m-b--20">
-                        <div class="col-xs-6">            
+                        <div class="col-xs-6">
                             @Html.ActionLink("Register Now!", "RegisterNow", "User")
                         </div>
-                        <div class="col-xs-6 align-right">  
+                        <div class="col-xs-6 align-right">
                             @Html.ActionLink("Forgot Password?", "FogetPassword", "User")
                         </div>
                     </div>
@@ -101,12 +136,9 @@
         </div>
     </div>
 
-    <!-- Jquery Core Js -->
-    <script src="~/Scripts/jquery-1.10.2.js"></script>
-
+ 
     <!-- Bootstrap Core Js -->
     <script src="~/Scripts/bootstrap.js"></script>
-    <script src="~/Scripts/jquery-1.10.2.js"></script>
     <!-- Bootstrap Core Js -->
     <script src="~/Scripts/bootstrap.js"></script>
 
@@ -115,7 +147,7 @@
 
     <!-- Validation Plugin Js -->
 
-    <script src="~/Scripts/jquery.validate.js"></script>
+    @*<script src="~/Scripts/jquery.validate.js"></script>*@
 
     <!-- Custom Js -->
     <script src="~/Scripts/site/admin.js"></script>
@@ -124,18 +156,7 @@
     <!--Toastr Js-->
     <script src="~/Scripts/toastr.js"></script>
 
-    @section scripts{
-        <script type="text/javascript">
-            $(document).ready(function () {
-                console.write('@String.IsNullOrEmpty(TempData["LOGIN_FAIL"].ToString())');
 
-                if ('@String.IsNullOrEmpty(TempData["LOGIN_FAIL"].ToString())') {
-                    toastr["error"](@TempData["LOGIN_FAIL"]);
-                }
-
-            });
-        </script>
-    }
 
 </body>
 </html>
