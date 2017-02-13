@@ -346,6 +346,8 @@
     <Content Include="Views\Shared\_RightSideBar.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\FogetPassword.cshtml" />
+    <Content Include="Views\User\RegisterNow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

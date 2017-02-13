@@ -57,6 +57,15 @@ namespace SMSystem.Controllers
             return View();
         }
 
+        public ActionResult FogetPassword()
+        {
+            return View();
+        }
+
+        public ActionResult RegisterNow()
+        {
+            return View();
+        }
 
 
     }

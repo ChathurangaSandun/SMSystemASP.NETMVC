@@ -32,6 +32,10 @@
     <!--Toastr-->
     <link href="~/Content/toastr.css" rel="stylesheet" />
 
+
+     
+
+
 </head>
 
 <body class="login-page">
@@ -82,11 +86,11 @@
                         </div>
                     </div>
                     <div class="row m-t-15 m-b--20">
-                        <div class="col-xs-6">
-                            <a href="sign-up.html">Register Now!</a>
+                        <div class="col-xs-6">            
+                            @Html.ActionLink("Register Now!", "RegisterNow", "User")
                         </div>
-                        <div class="col-xs-6 align-right">
-                            <a href="forgot-password.html">Forgot Password?</a>
+                        <div class="col-xs-6 align-right">  
+                            @Html.ActionLink("Forgot Password?", "FogetPassword", "User")
                         </div>
                     </div>
 
@@ -121,7 +125,7 @@
     <script src="~/Scripts/toastr.js"></script>
 
     @section scripts{
-        <script>
+        <script type="text/javascript">
             $(document).ready(function () {
                 console.write('@String.IsNullOrEmpty(TempData["LOGIN_FAIL"].ToString())');
 
