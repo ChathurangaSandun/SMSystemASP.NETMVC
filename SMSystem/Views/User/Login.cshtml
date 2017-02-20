@@ -50,7 +50,9 @@
             if (result === "False") {
                 toastr["error"]("Wrong Username and password!!");
                 //var p = $(".card").delay(3000).css("background-color", "red");
-            }  
+            } else {
+                window.location.href = '@Url.Action("Index","Home")';
+            }
         }
 
         function BeginProgress() {
