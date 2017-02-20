@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Project_Name" xml:space="preserve">
-    <value>SM SYSTEM</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAM1Y227jNhB9L9B/EPTUAlnLdlCgG8i7SOykNbpOgpV3XwtaGttEeVFJKrW/rQ/9pP7CDnW/2I7tpEERBDDJ4ZnhmeHMUP/+/Y//ccOZ8wRKUylG7qDXdx0QoYyoWI3cxCzf/ex+/PD9d/5txDfO10Lu0srhTqFH7tqY+MrzdLgGTnSP01BJLZemF0rukUh6w37/vTcYeIAQLmI5jv85EYZySAc4HEsRQmwSwmYyAqbzeVwJUlTnnnDQMQlh5AazYKsN8N7kBrcJCA1a5DrXjBI0JgC2dB0ihDTELlx90RAYJcUqiHGCsPk2BpRbEqYhP8JVJX7safpDexqv2lhAhYk2kp8IOLjM6fHa288i2S3pQwJvkWiztadOSRy5SIhynbaiqzFTVqjGb+aKnpW/cIrZizIGMFTs34UzTphJFIwEJEYRduE8JgtGw99gO5d/gBiJhLG6SWgUrjUmcOpRyRiU2X6GZW7oNHIdr7nPa28st9X2ZMeYCnM5dJ17VE4WDEqP144cGKngFxCgiIHokRgDSlgMSDnraG/pssTYX4VGDDO8NK4zI5tPIFZmPXKHP+E1uaMbiIqZ3IovguIdw01GJbDDysOaH4nWf0kV/Ur0+oB2/PlfaL/lhLK3VzvVeN2XUnEofXwjJQMiToYaK0CPT/B/Tiv/VeMT4WZyQRncJ3xhb9Zb82LD0OosNWMG7FWTB9F8r0oPzaSR8FbKyNCm+o6RVZU/T0sjduXlqQT5ikCxLfJbv+pNkmZgvZHbfx1xilHylbAER/0Oow3hwCQ2AZTig8PicyCYk1UpPuwynHHZTcoYz4ZQUWme/Z4xs4NXpC+nVudx0rQpQwzA1FymXadyby0wdsdAaU1VfL2s+hZV2ttTpv0ZiWP0Rq1s5zNOkNXs8bvg9ErGMwwv1DsKWmltqQmTOVlBaxVVo6V3VGmD15ssiA3accQ7YhX3e3gt9NTpbdewiu1C2v4unLujbcnc0YKp6LvDE3GMxfRwUJqS1/DOtrRdIoyoHUVxLFnCxb7Cemh3VebqGNXs8UjNslVHa64cj5iXojpUPnU8RqOuNGiqLxyP1y4udcj22vGozRpTx2yunObXLKm3/ZrNdpF8rxWX7fj3Oheg1b61b9OhNNQWKbWX6aiVdvw8BTz/hOjkhEzEdZCiJxql+SC/rCjQC/5kY0bTmlAIzIigS9AmK0sutvDD1hPk//Mc8LSO2BFvgjdv0all9Nkm/Ix2qN6ViyeiwjVR3b78FZruAvwHTjY/vqyRfhnUjuZ4Qc0rNcYRjs1rNcYvO2e72U1D6MwWd1cL1u0Wnm+z9nZZWVZB/hYS7c0szPuyMxuwbobzvfqnFH8Cmq4qCL9qNSrQQmaKAVPQiyeqW1SItP0JhmAwkGtl6JKEBpdD0Dp96OTt7y36OpqKh8TEibnWGltl1nhJ+95h/WmX2bTZf4jtSL/GEdBMauP5QdwklEWl3Xc7ImcPhI2RPGGhVfjQQ7jVtkS6l+JIoJy+CcQgbLqbA48ZgukHEZAnOMc2DK9PsCLhtihU+0Ged0STdn9CyUoRrnOMar/9POjZ74MfvgEMhhl+URQAAA==</value>
   </data>
-  <data name="Sub_Name" xml:space="preserve">
-    <value>Student Managment System by Chathurnaga Sandun Kumara </value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Project_Name" xml:space="preserve">
-    <value>SM SYSTEM</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAM1Y224bNxB9L5B/WOxTCziiLaNAaqwS2JLdColsI+vktaB2RxIRXrYk15G+rQ/9pP5Ch3u/SLLkOEEhCNglZ85cOHM40r9//xO8WwvuPYI2TMmRfzY49T2QkYqZXI781C5ev/HfvX31U3Adi7X3uZQ7d3KoKc3IX1mbXBBiohUIagaCRVoZtbCDSAlCY0WGp6e/kbMzAgjhI5bnBR9TaZmA7AVfx0pGkNiU8pmKgZtiHXfCDNW7pQJMQiMY+eEs3BgLYjC5QjUJkUWPfO+SM4rOhMAXvkelVJa6jYtPBkKrlVyGCS5Q/rBJAOUWlBsoQrioxQ+N5nTooiG1YgkVpcYqcSTg2XmRHtJVf1aS/Sp9mMBrTLTduKizJI58TIj2va6hizHXTqiR3/woBk7+xCtXT6oawFJxnxNvnHKbahhJSK2m/MS7T+ecRe9h86C+gBzJlPOmS+gU7rUWcOleqwS03XyEReHoNPY90tYjXcVKraGThzGV9nzoe7donM45VCfeCDm0SsPvIEFTC/E9tRa0dBiQ5axnvWPLJcY9lRaxzLBpfG9G1x9ALu1q5A9/xTa5YWuIy5XCi0+SYY+hktUpbPFyv+V7asxXpeM/qFntsY6P38P6taCM/3izU4PtvlBaQHXGV0pxoPJoqLEGPPEJfh9YfX71+5FwMzVnHG5TMXed9X3zEpC6ofttjhmylGFBF56Fsz/ztt3S8Fi+Rc+bwnI7yBwxBNsod+N7tfmcbAc5n2zzsfKmpnOS83nJ+2QH8QczmiSYv8ZFUKx4YX4LjF+Hx3OjyDFIZLZQZOVtZQnpgS6hs4um0dMbpo3FgqFz6k5oHIueWJ37HXkt7TTT22XFOtultHsuD3fLRZgfRwemTt8NRiSQ3rLgoHKluBV6atkFTDnVW2h2rHgq5C6q3qddE2cTo149HKlNhE209s7hiAW5NaGKpcMxWkzVSlNz43C8Ll01Ibt7h6O2WauJ2d7pIwakU03dqiW9su1c490e2EceXZHKekUiHbIIisZ9epTsdXIu4nuYqkcWZ11ctBgKDMK/+JgzjLcWmFHJFmBsPun4OMoNO6Po/2csJMbE/IDZ8IePasxl9Mlh7MhLuTudyUeqoxXV/fnsBYavEvxnQde/fNtA9W1QW4akObMvNCDF+G5fakA6Js7jhp7+/fz0YLNzrskZAWOfK/Q897CYhJ458vTZKSDNn8PBBAxb1hBBfbnXoKXMFA+7TDZG1PSoFOmeBViKB0kvtWULGlncjsCYbFj9THma1eMc4qm8S22S2ktjQMx569dQQPbbz+a6ts/BXeLezEuEgG4yV4t38iplPK78vtlSOTsgXI0UZINe4bCOcMtNhXSr5IFARfomkIB0VPUAIuEIZu5kSB/hOb5heX2AJY025SWzG+Tpg2inPZgwutRUmAKj1nd/8RD3H8/b/wCZQIErFRIAAA==</value>
   </data>
-  <data name="Sub_Name" xml:space="preserve">
-    <value>Student Managment System by Chathurnaga Sandun Kumara </value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>
